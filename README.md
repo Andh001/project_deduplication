@@ -1,4 +1,4 @@
-# project_deduplication
+# Project Deduplication
 
 Data deduplication refers to a technique for eliminating
 redundant data in a data set. In the process of deduplication,
