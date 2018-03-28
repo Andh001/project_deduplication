@@ -51,6 +51,7 @@ This whole idea is applied on files,
 block size if 256KB
 and to keep duplication count of blocks(pages) we have implemented a 
 "In Memory Database"
+(sorry for bad English!)
 (To be continued..)
 	
 
