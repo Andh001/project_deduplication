@@ -48,7 +48,7 @@ to avoid this situation there is second type of duplication,
 	and Shyam can access only 40 pages.
 
 This whole idea is applied on files,
-block size if 256KB
+block size is 256KB
 and to keep duplication count of blocks(pages) we have implemented a 
 "In Memory Database"
 (sorry for bad English!)
