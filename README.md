@@ -10,3 +10,9 @@ and hence to use storage in more efficient way we have developed
 
 For more
 Read Wiki
+<br />
+<br />
+<br />
+
+Contributors:<br />
+[Nishant Agarwal](https://github.com/nishanta12)
