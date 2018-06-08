@@ -6,7 +6,7 @@ is not a good idea,
 on social sites also thousands of users uploads a same image,
 video, mp3 files, on cloud.
 and hence to use storage in more efficient way we have developed
-"Availability Aware Distributed Data Deduplication"
+"Reliability Aware Distributed Data Deduplication"
 
 For more
 Read Wiki
