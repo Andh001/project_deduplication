@@ -1,0 +1,57 @@
+How To Run Project: 
+
+Install Vmware, Virtual Box (ONLY IF YOU WANT TO RUN THIS PROJECT ON SINGLE MACHINE!; otherwise there is no need)
+this whole project was deployed on Ubuntu linux OS (virtual machine)
+
+software needs to install on virtual machine(ubuntu)
+Mysql (any version)(please refer sql.py for database structure)
+gcc
+
+python libs on virtual machine(ubuntu):
+hashlib // to calculate sha256 of block
+ctypes  // to communicate with C library RAM.so (see NEW_RAM_WHOLE_IP.c)
+MySQLdb
+
+How to compile NEW_RAM_WHOLE_IP.c to RAM.so : (https://stackoverflow.com/questions/14884126/build-so-file-from-c-file-using-gcc-command-line)
+gcc -c -fPIC NEW_RAM_WHOLE_IP.c -o RAM.o
+gcc RAM.o -shared -o RAM.so //insert this file on virtual machine(ubuntu)( or on Main Server )
+
+this project runs on multiple servers...
+subservers can by anyone..
+How to run on Single PC:
+	in this project we have 5 sub servers..plus 1 client(means 6 MORE ip addresses)
+	we can deploy this project on single pc
+	but need more 6 interfaces like "wlan0"
+	Therefore we installed ubuntu as virtual machine..
+	after installation we added new 6 new interfaces into that OS
+	(right click on virtual machine -> see properties of virtual machine)
+	
+	after having 6 interfaces 
+	change ip addresses into all servers code
+	
+	Now change ip addresses into all servers code
+	Now we can execute this project with using "launch.sh"
+	
+	Result : 
+	Here 5 ipaddresses,interfaces will act like subservers..
+	1 ip address,interface will act as client (or can be anyone but must be present on Network!)
+	default ipaddresses,interface can be main server!
+	
+How to run on multiple PC's:
+	just copy sub server dir to corresponding sub server machine
+	here you need to run subserver.py code manually
+
+Now change ip addresses into all servers code
+
+there is no need to install softwares on sub servers
+SubServer does not depend on mysql
+
+cilent can be anyone, android, linux pc, windows pc
+just install python on client and run Client.py
+
+
+Code Run Steps:
+1. Main Server Execution
+2. SubServers Execution(no sequence in execution)
+3. Client1 Execution,Client2 Execution,Client3 Execution,Client4 Execution, ..Clientn Execution (exec anyone, anytime!)
+..
